@@ -1,10 +1,10 @@
 # Curtain Call
 
-Curtain Call is an iOS app that automatically opens your curtains when your alarm goes off! Using Bluetooth, the app connects to an Arduino-powered curtain motor, so you wake up to natural light instead of a noisy ringtone.
+Curtain Call is an iOS app that automatically opens your curtains when your alarm goes off! Using Bluetooth, the app connects to an Arduino Nano powered curtain motor (with an HC-08 Bluetooth sensor), so you wake up to natural light instead of a ringtone.
 
 ## Features
 
-- **Bluetooth Curtain Control:** Connects to an Arduino device with a motor to physically open your curtains.
+- **Bluetooth Curtain Control:** Connects to an Arduino Nano device equipped with an HC-08 Bluetooth sensor and a motor to physically open your curtains.
 - **Wake-Up Automation:** Triggers curtain opening as soon as your alarm sounds.
 - **Easy Device Discovery:** Scans for and connects to supported curtain controllers.
 - **Reliable Motor Activation:** Sends multiple signals to ensure your curtains open every time.
@@ -12,15 +12,15 @@ Curtain Call is an iOS app that automatically opens your curtains when your alar
 
 ## How It Works
 
-- The app scans for Bluetooth devices (e.g., Arduino with HC-08 module).
-- When your alarm is triggered, Curtain Call sends a signal to the Arduino to activate the motor and open the curtains.
+- The app scans for Bluetooth devices (e.g., Arduino Nano with HC-08 module).
+- When your alarm is triggered, Curtain Call sends a signal to the Arduino Nano (via HC-08) to activate the motor and open the curtains.
 - Communication is repeated to ensure the signal is received.
 
 ## Requirements
 
 - iOS device (SwiftUI compatible)
-- Arduino with Bluetooth module (HC-08 recommended)
-- Motor setup to control your curtains (connected to the Arduino)
+- Arduino Nano with HC-08 Bluetooth module
+- Motor setup to control your curtains (connected to the Arduino Nano)
 - Xcode (for building from source)
 
 ## Setup
@@ -31,7 +31,7 @@ Curtain Call is an iOS app that automatically opens your curtains when your alar
    ```
 2. Open the project in Xcode.
 3. Build and run on your iOS device.
-4. Set up your Arduino and motor following your hardware instructions.
+4. Set up your Arduino Nano and motor, and connect the HC-08 Bluetooth module following your hardware instructions.
 
 ## Usage
 
