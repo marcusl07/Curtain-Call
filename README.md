@@ -17,11 +17,20 @@ Curtain Call is an iOS app that automatically opens your curtains when your alar
 - Communication is repeated to ensure the signal is received.
 
 ## Requirements
-
+   App:
 - iOS device (SwiftUI compatible)
-- Arduino Nano with HC-08 Bluetooth module
-- Motor setup to control your curtains (connected to the Arduino Nano)
 - Xcode (for building from source)
+  
+   Device:
+- Arduino Nano
+- HC-08 Bluetooth module
+- L9110h motor driver
+- 2x PNP power transistors
+- ~3Ω and ~100Ω resistor
+- ~5V power supply, such as 3x 1.5V AA batteries.
+- Motor & winch to control your curtains (connected to the Arduino Nano)
+- Gearbox if your motor isn't strong enough
+- A box to house the electronics and something to hold the device to the window, like a suction cup.
 
 ## Setup
 
@@ -32,6 +41,10 @@ Curtain Call is an iOS app that automatically opens your curtains when your alar
 2. Open the project in Xcode.
 3. Build and run on your iOS device.
 4. Set up your Arduino Nano and motor, and connect the HC-08 Bluetooth module following your hardware instructions.
+
+   Hardware schematic:
+   <img width="590" height="421" alt="Screenshot 2025-09-10 at 19 21 17" src="https://github.com/user-attachments/assets/3a26d2e3-1b49-48e2-b7b1-b213584c0a56" />
+
 
 ## Usage
 
