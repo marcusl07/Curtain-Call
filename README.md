@@ -17,11 +17,11 @@ Curtain Call is an iOS app that automatically opens your curtains when your alar
 - Communication is repeated to ensure the signal is received.
 
 ## Requirements
-   App:
+App:
 - iOS device (SwiftUI compatible)
 - Xcode (for building from source)
-  
-   Device:
+
+Device:
 - Arduino Nano
 - HC-08 Bluetooth module
 - L9110h motor driver
